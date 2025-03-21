@@ -60,7 +60,7 @@
 <!-- PURPOSE -->
 ## Purpose
 
-- PDF resume are not parsable by nature.
+- PDF resumes are not parsable by nature.
 - Only standard format resume is compatible with ATS "Applicant Tracking System".
 - Format creativity is prohibited in favor of ability to be parsable.  
 
