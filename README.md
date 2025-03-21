@@ -105,16 +105,18 @@ git clone https://github.com/rezi-io/resume-standard.git
 cd resume-standard
 ```
 
-2. Build the parser:
+2. Build the parser
+   (tested with Docker 27.5.1):
 - for local use:
 ```bash
 g++ -std=c++17 -o ./parser/lib/rms-parser ./parser/src/parser.cpp
 ```
-- for ARM architecture:
+- for ARM architecture :
 ```bash
 docker run --rm -v "$PWD":/src -w /src ubuntu:20.04 bash -c \                       
   "apt update && apt install -y g++ && g++ -o ./parser/lib/rms-parser ./parser/src/parser.cpp"
 ```
+
 - for x86 architecture ( like Cloud functions, AWS Lambda, etc):
 ```bash
 docker run --rm --platform linux/amd64 -v "$PWD":/src -w /src ubuntu:20.04 bash -c \
